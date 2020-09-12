@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Contact</title>
+        <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
         <h3>Contac to me</h3>
@@ -12,15 +13,37 @@
         </ol>  
 
         <form class="" method="POST" action="mailto:rodrigocanalla96@gmail.com" enctype="text/plain">
-            <label>Your name:</label>
-            <input type="text" name="yourname">
-            <br>
-            <label>Your email:</label>
-            <input type="email" name="youremail">
-            <br>
-            <label >Your message</label><br>
-            <textarea cols="30" rows="10" name="yourmessage"></textarea>
-            <input type="submit" name="">
+            <table align="left">
+                <tr>
+                    <td>
+                        <label>Your name:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="yourname" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Your email:</label>
+                    </td>
+                    <td>
+                        <input type="email" name="youremail" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label >Your message</label><br>
+                    </td>
+                    <td>
+                        <textarea cols="30" rows="10" name="yourmessage" required></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="submitcontact" colspan="2">
+                        <input type="submit" name="" class="submit">
+                    </td>
+                </tr>
+            </table>
         </form>
     </body>
 </html>
